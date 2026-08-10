@@ -19,7 +19,7 @@ jobs:
           template: terminal
           filename: metrics.terminal.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header
+          # base: header
           plugin_isocalendar: yes
           plugin_languages: no
           plugin_stars: no

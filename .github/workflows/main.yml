@@ -16,9 +16,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          template: terminal
+          filename: metrics.terminal.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "Header"
-          plugin_isocalendar: yes
-          plugin_languages: no
-          plugin_stars: no
-          config_order: base.header, isocalendar
+          base: header, metadata
